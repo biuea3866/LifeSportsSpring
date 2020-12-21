@@ -24,7 +24,7 @@
             name="loginForm"
             method="post"
             action="/auth/loginCheck"
-            onsubmit="login()"
+            onsubmit="return login()"
         >
             <input
                 type="text"
