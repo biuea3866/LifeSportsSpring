@@ -1,0 +1,14 @@
+#mapContainer {
+    float: left;
+    width: 75%;
+    margin-top: 130px;
+    height: calc(100% - 130px);
+}
+
+#searchBar {
+    float: left;
+    width: 25%;
+    margin-top: 130px;
+    height: calc(100% - 130px);
+    background-color: #ffffff;
+}

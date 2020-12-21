@@ -40,7 +40,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="${pageContext.request.contextPath}/map/">
                         <div class="header_nav_icon_area">
                             <ion-icon src="${pageContext.request.contextPath}/resources/static/img/map-outline.svg"></ion-icon>
                         </div>
