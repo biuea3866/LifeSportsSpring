@@ -67,6 +67,12 @@ public class MapVO {
     private String FACI_STAT;
     // 시설삭제여부(삭제:Y, 미삭제:N)
     private String DEL_YN;
+    // 좋아요
+    private int like;
+    // 싫어요
+    private int dislike;
+    // 조회수
+    private int viewCnt;
 
     public String getFACI_NM() {
         return FACI_NM;
@@ -330,5 +336,29 @@ public class MapVO {
 
     public void setDEL_YN(String DEL_YN) {
         this.DEL_YN = DEL_YN;
+    }
+
+    public int getLike() {
+        return like;
+    }
+
+    public void setLike(int like) {
+        this.like = like;
+    }
+
+    public int getDislike() {
+        return dislike;
+    }
+
+    public void setDislike(int dislike) {
+        this.dislike = dislike;
+    }
+
+    public int getViewCnt() {
+        return viewCnt;
+    }
+
+    public void setViewCnt(int viewCnt) {
+        this.viewCnt = viewCnt;
     }
 }

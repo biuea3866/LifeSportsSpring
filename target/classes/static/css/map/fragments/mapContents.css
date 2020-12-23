@@ -12,3 +12,96 @@
     height: calc(100% - 130px);
     background-color: #ffffff;
 }
+
+#searchBar_Header {
+    width: 100%;
+    height: 110px;
+    float: left;
+    margin-top: 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#searchBar_Header_Header {
+    float: left;
+    width: 100%;
+    margin-left: 20px;
+    color: #00264B;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#searchBar_Header_Contents {
+    float: left;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#searchBar_Header_Contents_Article {
+    float: left;
+    width: 75%;
+}
+
+#searchBar_Header_Contents_Article > button {
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#searchBar_Header_Contents_Filter {
+    float: left;
+    width: 25%;
+}
+
+#searchBar_Header_Contents_Filter > button {
+    border: 2px solid #00264B;
+    color: #00264B;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#searchBar_Contents {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#searchBar_Contents_Header_inputArea {
+    float: left;
+    width: 75%;
+    height: 30px;
+}
+
+#searching {
+    width: 100%;
+    height: 35px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+#searching:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+#searchBar_Contents_Header_iconArea {
+    float: left;
+    height: 30px;
+    text-align: center;
+}
+
+#search_icon {
+    background-color: #00264B;
+    border-radius: 4px;
+    color: #ffffff;
+    border: none;
+    margin: 8px 0;
+    padding: 8px;
+}

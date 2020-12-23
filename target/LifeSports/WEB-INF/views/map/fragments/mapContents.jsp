@@ -8,7 +8,41 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/static/css/map/fragments/mapContents.css"/>
 <div id="searchBar">
-    aa
+    <div id="searchBar_Header">
+        <div id="searchBar_Header_Header">
+            오늘은 어디서 <br/>
+            운동을 해볼까요?
+        </div>
+        <div id="searchBar_Header_Contents">
+            <div id="searchBar_Header_Contents_Article">
+                지금 보고있는 지역은 <button><b>asd</b></button>
+            </div>
+            <div id="searchBar_Header_Contents_Filter">
+                <button>
+                    필터
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="searchBar_Contents">
+        <div id="searchBar_Contents_Header">
+            <div id="searchBar_Contents_Header_inputArea">
+                <input
+                    id="searching"
+                    type="text"
+                >
+            </div>
+            <div id="searchBar_Contents_Header_iconArea">
+                <input
+                    id="search_icon"
+                    type="button"
+                    value="검색"
+                    onclick="searchKeyword()"
+                />
+            </div>
+        </div>
+        <div id="searchBar_Contents_Contents"></div>
+    </div>
 </div>
 <div id="mapContainer">
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="map">
+    <select id="getAllMapList" resultType="mapvo">
+        <![CDATA[
+            SELECT *
+            FROM map
+        ]]>
+    </select>
+    <select id="getMapListByKeyword" resultType="mapvo" parameterType="string">
+        <![CDATA[
+            SELECT *
+            FROM map
+            WHERE FACI_NM LIKE CONCAT('%', #{ FACI_NM }, '%')
+            OR    FCOB_NM LIKE CONCAT('%', #{ FCOB_NM }, '%')
+        ]]>
+    </select>
+<!--    <select id="getMapListByPlace" resultType="list" parameterType="array">-->
+<!--        <![CDATA[-->
+<!--            SELECT *-->
+<!--            FROM map-->
+<!--            WHERE FMNG_CP_NM-->
+<!--        ]]>-->
+<!--    </select>-->
+</mapper>
